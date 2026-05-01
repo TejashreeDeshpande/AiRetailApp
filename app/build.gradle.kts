@@ -58,6 +58,9 @@ dependencies {
     // Coil for image loading
     implementation(libs.coil.compose)
 
+    // Navigation
+    implementation(libs.androidx.navigation.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
