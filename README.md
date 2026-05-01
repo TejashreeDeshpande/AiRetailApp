@@ -29,7 +29,9 @@ The app is built using **Clean Architecture** to ensure high testability and mai
 
 ## 📸 Screenshots
 
-*(Add your screenshots here later)*
+| Home Screen | Product Details | AI Search |
+| :---: | :---: | :---: |
+| <img src="screenshots/home.png" width="200" /> | <img src="screenshots/detail.png" width="200" /> | <img src="screenshots/search.png" width="200" /> |
 
 ## 🛠️ Getting Started
 
