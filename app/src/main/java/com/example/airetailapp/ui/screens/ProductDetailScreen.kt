@@ -42,8 +42,7 @@ fun ProductDetailScreen(
     onBackClick: () -> Unit,
     viewModel: ProductViewModel = koinViewModel()
 ) {
-    val products by viewModel.products.collectAsState()
-    val product = products.find { it.id == productId }
+    val product by viewModel.getProductById(productId).collectAsState()
 
     Scaffold(
         topBar = {

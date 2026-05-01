@@ -20,6 +20,10 @@ class MockProductRepository : ProductRepository {
         return flowOf(mockProducts)
     }
 
+    override fun getProductByIdFlow(id: Int): Flow<Product?> {
+        return flowOf(mockProducts.find { it.id == id })
+    }
+
     override suspend fun getProductById(id: Int): Product? {
         return mockProducts.find { it.id == id }
     }

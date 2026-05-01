@@ -18,6 +18,10 @@ class ProductRepositoryImpl(
         }
     }
 
+    override fun getProductByIdFlow(id: Int): Flow<Product?> {
+        return productDao.getProductByIdFlow(id).map { it?.toDomain() }
+    }
+
     override suspend fun getProductById(id: Int): Product? {
         return productDao.getProductById(id)?.toDomain()
     }
